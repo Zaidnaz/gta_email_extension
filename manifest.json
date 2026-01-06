@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "GTA Mission Passed: Real",
+  "version": "2.0",
+  "description": "Authentic GTA San Andreas Mission Passed overlay.",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["mission_passed.mp3", "pricedown.ttf"],
+      "matches": ["https://mail.google.com/*"]
+    }
+  ]
+}
